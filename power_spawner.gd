@@ -8,6 +8,8 @@ func _ready() -> void:
 	pass # Replace with function body.
 
 func _process(delta):
+	if Engine.is_editor_hint():
+		return
 	if time_start == false:
 		$powerTimer.wait_time == randf_range(0.3, 0.7)
 		$powerTimer.start()

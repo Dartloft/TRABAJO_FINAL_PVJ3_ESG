@@ -9,15 +9,24 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_gv4em")
 
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.376157, 0.3666, 0.94, 0.647059)
+layout_mode = 0
+offset_right = 513.0
+offset_bottom = 598.0
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 offset_left = 45.0
 offset_top = 42.0
 offset_right = 282.115
@@ -28,6 +37,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Resume" type="Button" parent="."]
+modulate = Color(0.45, 1, 1, 1)
+layout_mode = 0
 offset_left = 159.0
 offset_top = 148.0
 offset_right = 359.0
@@ -35,6 +46,8 @@ offset_bottom = 201.0
 text = "RESUME"
 
 [node name="Quit" type="Button" parent="."]
+modulate = Color(1, 0.18, 0.18, 1)
+layout_mode = 0
 offset_left = 194.0
 offset_top = 217.0
 offset_right = 323.0

@@ -8,7 +8,6 @@ var bulletPath = preload("res://bullet.tscn")
 var screen_size
 
 
-	
 func _ready():
 	Signals.emit_signal("on_player_life_changed",life)
 	screen_size = get_viewport_rect().size
@@ -57,5 +56,5 @@ func damage(amount :int):
 	if life <= 0:
 		queue_free()
 		get_tree().change_scene_to_file("res://control.tscn")
-
+		$gameover.playing = true
 	
